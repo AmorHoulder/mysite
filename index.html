@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>呪いの王 | AMIR</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at center, #3b0000 0%, #120000 35%, #000 75%);
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(255,0,0,0.04) 4px
+    );
+    pointer-events: none;
+}
+
+header {
+    text-align: center;
+    padding: 30px 10px 15px;
+    color: #ff2020;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px red;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-box {
+    width: min(90%, 420px);
+    margin: auto;
+    border: 2px solid #8b0000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow:
+        0 0 20px #ff0000,
+        0 0 60px #600000;
+    animation: pulse 2.5s infinite alternate;
+}
+
+.image-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 30px 0 5px;
+    font-size: 38px;
+    color: #ff2020;
+    text-shadow: 0 0 20px red;
+}
+
+.subtitle {
+    color: #aaa;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.story {
+    width: min(90%, 700px);
+    margin: 35px auto;
+    padding: 25px;
+    background: rgba(20, 0, 0, 0.75);
+    border: 1px solid #600000;
+    border-radius: 15px;
+    line-height: 2;
+    font-size: 16px;
+    box-shadow: 0 0 25px rgba(255,0,0,0.2);
+}
+
+button {
+    border: 1px solid red;
+    background: #180000;
+    color: #ff3030;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 15px red;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: red;
+    color: black;
+    box-shadow: 0 0 35px red;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-size: 12px;
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 15px red;
+    }
+    to {
+        box-shadow: 0 0 45px #ff0000;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    AMIR
+</header>
+
+<section class="hero">
+
+    <div class="image-box">
+        <img src="sukuna.png" alt="Sukuna">
+    </div>
+
+    <h1>怪物の誕生</h1>
+
+    <div class="subtitle">
+        THE BIRTH OF A MONSTER
+    </div>
+
+</section>
+
+<section class="story">
+
+彼はただの普通の少年だった。<br>
+穏やかで、口数が少なく、自分にとって何より大切な唯一の友情に支えられていた。<br><br>
+
+彼は長い年月を親友と共に過ごしてきた。<br>
+二人で笑い、失敗し、そして決して互いを裏切らないと約束していた。<br><br>
+
+しかし、ある出来事がすべてを変えた。<br>
+二人の友情は崩れ去った。<br>
+大きな争いがあったわけではない。<br>
+いくつかの言葉、いくつかの誤解、そしてもう取り戻すことのできない選択があっただけだった。<br><br>
+
+その夜、少年は初めて気づいた。<br>
+自分の中で、何かが壊れてしまったことに。<br><br>
+
+日々が過ぎるにつれ、彼はもう以前の彼ではなくなっていった。<br>
+少しずつ、穏やかさは怒りに変わり、言葉は沈黙へと変わっていった。<br><br>
+
+しかし、本当に恐ろしいことは、それではなかった。<br>
+過去を思い出すたびに、その怒りは大きくなっていった。<br>
+そしてついには、自分自身でさえそれを抑えられなくなった。<br><br>
+
+かつて友情のためなら、すべてを捧げることができた少年。<br>
+その少年は今、自分自身さえ恐れるほどの存在へと変わっていた。<br><br>
+
+<strong>怪物として生まれたわけではない……</strong><br>
+<strong>怪物にされたのだ。</strong><br><br>
+
+そして、これはまだ物語の始まりにすぎなかった。
+
+</section>
+
+<div style="text-align:center;">
+    <button onclick="document.querySelector('.story').scrollIntoView({behavior:'smooth'})">
+        物語を読む
+    </button>
+</div>
+
+<footer>
+    SYSTEM ONLINE • 2026
+</footer>
+
+</body>
+</html>
